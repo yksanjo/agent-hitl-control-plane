@@ -1,32 +1,84 @@
 # agent-hitl-control-plane
 
-Human-in-the-loop control plane for approvals and escalation workflows.
+## Detailed Description
 
-## Scope
+agent-hitl-control-plane is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-Review queues, approval states, and reversible action controls.
+## Problem Statement
 
-## Capabilities
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- Review queues, approval states, and reversible action controls.
-- SLA-aware routing for manual interventions and overrides.
-- Decision capture with rationale, evidence, and audit context.
-- Operator console APIs for multi-team governance workflows.
+## Solution Overview
 
-## Repository Layout
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-- `src/main.py` entrypoint and lightweight service bootstrap
-- `src/project_profile.py` canonical project metadata
-- `src/service_contract.py` baseline domain contract shape
-- `tests/` smoke and contract tests
-- `docs/` architecture and roadmap
+## Key Features
 
-## Quick Start
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -e .[dev]
-pytest -q
-python -m src.main
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
 ```
+
+## Usage
+
+Document primary commands, API routes, CLI examples, or UI workflows here.
+
+## Quality Standards
+
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
+
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
